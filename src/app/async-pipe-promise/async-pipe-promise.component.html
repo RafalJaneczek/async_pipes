@@ -8,6 +8,10 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <router-outlet></router-outlet>
+    <div>
+        <code>promise|async</code>:
+        <button (click)="clicked()">{{ arrived ? 'Reset' : 'Resolve' }}</button>
+        <span>Wait for it... {{ logMessage | async }}</span>
+    </div>
 </body>
 </html>
